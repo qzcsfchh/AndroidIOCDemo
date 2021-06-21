@@ -1,0 +1,5 @@
+include ':dex-way'
+include ':service'
+include ':app'
+rootProject.name = "ServiceDiscoverDemo"
+include ':service-impls'
