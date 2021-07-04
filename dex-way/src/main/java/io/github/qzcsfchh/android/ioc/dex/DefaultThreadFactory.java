@@ -1,4 +1,4 @@
-package io.github.qzcsfchh.android.servicediscover.dex;
+package io.github.qzcsfchh.android.ioc.dex;
 
 
 import android.util.Log;

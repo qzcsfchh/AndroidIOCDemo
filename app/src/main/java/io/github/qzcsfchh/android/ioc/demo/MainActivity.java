@@ -1,9 +1,13 @@
-package io.github.qzcsfchh.android.servicediscover.demo;
+package io.github.qzcsfchh.android.ioc.demo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import me.hao.annotation.Router;
+
+
+@Router("hahha")
 public class MainActivity extends AppCompatActivity {
 
     @Override

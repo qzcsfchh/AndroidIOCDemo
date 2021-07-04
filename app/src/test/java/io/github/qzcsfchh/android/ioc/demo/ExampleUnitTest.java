@@ -1,4 +1,4 @@
-package io.github.qzcsfchh.android.servicediscover.demo;
+package io.github.qzcsfchh.android.ioc.demo;
 
 import org.junit.Test;
 

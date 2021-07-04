@@ -1,4 +1,4 @@
-package io.github.qzcsfchh.android.servicediscover;
+package io.github.qzcsfchh.android.ioc;
 
 /**
  * Desc.
