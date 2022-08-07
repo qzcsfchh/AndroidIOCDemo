@@ -1,9 +1,12 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
-    ext.kotlin_version = '1.5.20-RC'
+    ext.kotlin_version = '1.5.30'
+    ext.LATEST_VERSION_IN_README = '1.2.3'
+    ext.glide_version = '4.9.0'
     repositories {
         google()
         jcenter()
+        mavenCentral()
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.0.1"
@@ -11,6 +14,8 @@ buildscript {
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
+        classpath "cn.quinnchen.hunter:hunter-debug-plugin:${LATEST_VERSION_IN_README}"
+        classpath "cn.quinnchen.hunter:hunter-transform:${LATEST_VERSION_IN_README}"
     }
 }
 
@@ -18,6 +23,14 @@ allprojects {
     repositories {
         google()
         jcenter()
+        mavenCentral()
+    }
+    configurations.all {
+        resolutionStrategy {
+            // 强制指定版本
+//            force 'androidx.core:core:1.9.0-alpha05'
+            force 'androidx.core:core-ktx:1.6.0'
+        }
     }
 }
 

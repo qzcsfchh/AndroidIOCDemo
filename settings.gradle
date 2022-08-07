@@ -2,6 +2,7 @@ rootProject.name = "AndroidIOCDemo"
 include ':app'
 include ':dex-way'
 include ':service'
-include ':service-impls'
+include ':service-impl-1'
+include ':service-impl-2'
 include ':apt-annotation'
 include ':apt-compiler'
